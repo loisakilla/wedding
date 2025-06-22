@@ -3,7 +3,14 @@ import { motion } from 'framer-motion';
 import '../styles/hero.css';
 
 const Hero: React.FC = () => (
-  <section id="home" className="hero">
+
+  <motion.section
+    id="home"
+    className="hero"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+  >
+
     <motion.h1
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -19,7 +26,8 @@ const Hero: React.FC = () => (
       Мы рады пригласить вас на нашу свадьбу!
     </motion.p>
     <a href="#details" className="scroll-down">Узнать подробности</a>
-  </section>
+  </motion.section>
+
 );
 
 export default Hero;

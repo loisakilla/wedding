@@ -9,14 +9,15 @@ const images = [
 ];
 
 const Gallery: React.FC = () => (
-  <section id="gallery" className="gallery">
-    <motion.h2
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-    >
-      Галерея
-    </motion.h2>
+
+  <motion.section
+    id="gallery"
+    className="gallery"
+    initial={{ opacity: 0, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+  >
+    <h2>Галерея</h2>
     <div className="grid">
       {images.map((src, idx) => (
         <motion.img
@@ -29,7 +30,8 @@ const Gallery: React.FC = () => (
         />
       ))}
     </div>
-  </section>
+  </motion.section>
+
 );
 
 export default Gallery;
