@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import '../styles/gallery.css';
 
 const images = [
-  'https://via.placeholder.com/300x200',
-  'https://via.placeholder.com/300x200?text=2',
-  'https://via.placeholder.com/300x200?text=3',
+  'https://sun9-66.userapi.com/s/v1/ig2/dwlRipL9eVZt1B28qnZO4luNuATg5EzzMRW0ZxDRDlJ7Zb1nFFBjp4gzm90XTR4SX5qATRA0YnnUMliiBHEtWNIo.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080&from=bu&cs=720x0',
+  'https://sun9-66.userapi.com/s/v1/ig2/dwlRipL9eVZt1B28qnZO4luNuATg5EzzMRW0ZxDRDlJ7Zb1nFFBjp4gzm90XTR4SX5qATRA0YnnUMliiBHEtWNIo.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080&from=bu&cs=720x0',
+  'https://sun9-66.userapi.com/s/v1/ig2/dwlRipL9eVZt1B28qnZO4luNuATg5EzzMRW0ZxDRDlJ7Zb1nFFBjp4gzm90XTR4SX5qATRA0YnnUMliiBHEtWNIo.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080&from=bu&cs=720x0',
 ];
 
 const Gallery: React.FC = () => (

@@ -26,16 +26,16 @@ const Countdown: React.FC = () => {
   return (
     <section className="countdown">
       <div className="flip-unit">
+        <span className="label">Дней</span>
         <span className="number">{timeLeft.days}</span>
-        <span className="label">дней</span>
       </div>
       <div className="flip-unit">
+        <span className="label">Часов</span>
         <span className="number">{timeLeft.hours}</span>
-        <span className="label">часов</span>
       </div>
       <div className="flip-unit">
+        <span className="label">Минут</span>
         <span className="number">{timeLeft.minutes}</span>
-        <span className="label">минут</span>
       </div>
     </section>
   );

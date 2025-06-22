@@ -16,7 +16,7 @@ const ParticlesBackground: React.FC = () => {
       init={particlesInit}
       options={{
         fullScreen: { enable: false },
-        background: { color: '#a6a6a6' },
+        background: { color: '#cdc1c1' },
         interactivity: {
           events: {
             onHover: { enable: true, mode: 'attract' },
@@ -27,21 +27,21 @@ const ParticlesBackground: React.FC = () => {
           },
         },
         particles: {
-          color: { value: '#2e2e2e' },
+          color: { value: '#ae4848' },
           shape: { type: 'heart' },
           links: {
-            color: '#2e2e2e',
+            color: '#986464',
             distance: 150,
             enable: true,
-            opacity: 0.2,
+            opacity: 0.6,
             width: 1,
           },
           move: {
             enable: true,
-            speed: 1,
+            speed: 0.5,
           },
           number: { value: 60, density: { enable: true, area: 800 } },
-          size: { value: { min: 1, max: 3 } },
+          size: { value: { min: 3, max: 7 } },
         },
       }}
       style={{ position: 'fixed', inset: 0, zIndex: -1 }}
