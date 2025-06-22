@@ -1,0 +1,16 @@
+.schedule {
+  padding: 4rem 2rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+.schedule ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.schedule li {
+  margin: 1rem 0;
+}
