@@ -2,10 +2,12 @@ import React, { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import type { Engine } from 'tsparticles-engine';
 import { loadSlim } from 'tsparticles-slim';
+import { loadHeartShape } from 'tsparticles-shape-heart';
 
 const ParticlesBackground: React.FC = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
+    await loadHeartShape(engine);
   }, []);
 
   return (
@@ -26,6 +28,7 @@ const ParticlesBackground: React.FC = () => {
         },
         particles: {
           color: { value: '#2e2e2e' },
+          shape: { type: 'heart' },
           links: {
             color: '#2e2e2e',
             distance: 150,

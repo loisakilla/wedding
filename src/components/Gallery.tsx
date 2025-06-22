@@ -15,19 +15,20 @@ const Gallery: React.FC = () => (
     className="gallery"
     initial={{ opacity: 0, y: 100 }}
     whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, amount: 0.2 }}
+    viewport={{ once: false, amount: 0.2 }}
   >
     <h2>Галерея</h2>
-    <div className="grid">
+    <div className="list">
       {images.map((src, idx) => (
-        <motion.img
+        <motion.div
           key={idx}
-          src={src}
-          alt={`gallery-${idx}`}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        />
+          className={`item ${idx % 2 === 0 ? 'left' : 'right'}`}
+          initial={{ opacity: 0, x: idx % 2 === 0 ? -100 : 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+        >
+          <img src={src} alt={`gallery-${idx}`} />
+        </motion.div>
       ))}
     </div>
   </motion.section>

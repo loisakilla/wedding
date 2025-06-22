@@ -5,15 +5,26 @@
   color: #fff;
 }
 
-.gallery .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+.gallery .list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
-.gallery img {
-  width: 100%;
-  display: block;
+.gallery .item {
+  display: flex;
+}
+
+.gallery .item.left {
+  justify-content: flex-start;
+}
+
+.gallery .item.right {
+  justify-content: flex-end;
+}
+
+.gallery .item img {
+  width: 300px;
   border-radius: 8px;
 }
