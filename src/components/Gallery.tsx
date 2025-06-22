@@ -9,6 +9,7 @@ const images = [
 ];
 
 const Gallery: React.FC = () => (
+
   <motion.section
     id="gallery"
     className="gallery"
@@ -30,6 +31,7 @@ const Gallery: React.FC = () => (
       ))}
     </div>
   </motion.section>
+
 );
 
 export default Gallery;

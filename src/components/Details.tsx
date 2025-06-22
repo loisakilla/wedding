@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import '../styles/details.css';
 
 const Details: React.FC = () => (
+
   <motion.section
     id="details"
     className="details"
@@ -16,6 +17,7 @@ const Details: React.FC = () => (
       Праздничный банкет пройдет в ресторане "Сказка".
     </p>
   </motion.section>
+
 );
 
 export default Details;
