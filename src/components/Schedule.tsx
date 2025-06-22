@@ -9,18 +9,18 @@ const Schedule: React.FC = () => (
     className="schedule"
     initial={{ opacity: 0, x: 100 }}
     whileInView={{ opacity: 1, x: 0 }}
-    viewport={{ once: true, amount: 0.2 }}
+    viewport={{ once: false, amount: 0.2 }}
   >
     <h2>Расписание дня</h2>
 
     <ul>
-      <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+      <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }}>
         15:00 - Регистрация брака
       </motion.li>
-      <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+      <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }}>
         17:00 - Фотосессия и приветственный фуршет
       </motion.li>
-      <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+      <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }}>
         18:00 - Банкет и развлекательная программа
       </motion.li>
     </ul>

@@ -13,7 +13,8 @@
     "@jasperj1/pointer.js": "^1.0.3",
     "react-tsparticles": "^2.12.2",
     "tsparticles-engine": "^2.12.0",
-    "tsparticles-slim": "^2.12.0"
+    "tsparticles-slim": "^2.12.0",
+    "tsparticles-shape-heart": "^2.12.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
