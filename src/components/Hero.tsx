@@ -4,7 +4,29 @@ import '../styles/hero.css';
 
 const Hero: React.FC = () => (
 
-  <motion.section
+
+    <motion.h1
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="name"
+    >
+      @KATY_ANDR
+    </motion.h1>
+      className="name"
+      и
+    </motion.h1>
+    <motion.h1
+
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="name"
+    >
+      @loisakilla
+      className="info"
+      Приглашают вас на свою свадьбу!
+
     id="home"
     className="hero"
     initial={{ opacity: 0 }}

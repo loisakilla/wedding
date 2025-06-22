@@ -9,8 +9,8 @@ const images = [
 ];
 
 const Gallery: React.FC = () => (
-
-  <motion.section
+    viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: false }}
     id="gallery"
     className="gallery"
     initial={{ opacity: 0, y: 100 }}
