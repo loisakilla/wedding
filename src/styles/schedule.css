@@ -1,6 +1,7 @@
 .schedule {
   padding: 4rem 2rem;
-  background-color: #f7f7f7;
+  background-color: transparent;
+  color: #fff;
 }
 
 .schedule ul {
