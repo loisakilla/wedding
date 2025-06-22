@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import '../styles/details.css';
 
 const Details: React.FC = () => (
-    viewport={{ once: false, amount: 0.2 }}
+
   <motion.section
     id="details"
     className="details"

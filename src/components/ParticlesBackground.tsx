@@ -14,7 +14,7 @@ const ParticlesBackground: React.FC = () => {
       init={particlesInit}
       options={{
         fullScreen: { enable: false },
-        background: { color: '#111' },
+        background: { color: '#a6a6a6' },
         interactivity: {
           events: {
             onHover: { enable: true, mode: 'attract' },
@@ -25,9 +25,9 @@ const ParticlesBackground: React.FC = () => {
           },
         },
         particles: {
-          color: { value: '#ffffff' },
+          color: { value: '#2e2e2e' },
           links: {
-            color: '#ffffff',
+            color: '#2e2e2e',
             distance: 150,
             enable: true,
             opacity: 0.2,
