@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #111;
+  color: #fff;
+  overflow-x: hidden;
+  cursor: none;
+}
