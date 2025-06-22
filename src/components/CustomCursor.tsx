@@ -1,18 +1,16 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
+import MouseFollower from 'mouse-follower';
+import gsap from 'gsap';
+import 'mouse-follower/dist/mouse-follower.min.css';
 import '../styles/cursor.css';
 
-const CustomCursor: React.FC = () => {
+const CustomCursor = () => {
   useEffect(() => {
-    const cursor = document.querySelector('.custom-cursor') as HTMLElement;
-    const move = (e: MouseEvent) => {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
-    };
-    document.addEventListener('mousemove', move);
-    return () => document.removeEventListener('mousemove', move);
+    MouseFollower.registerGSAP(gsap);
+    const cursor = new MouseFollower();
+    return () => cursor.destroy();
   }, []);
-
-  return <div className="custom-cursor" />;
+  return null;
 };
 
 export default CustomCursor;
