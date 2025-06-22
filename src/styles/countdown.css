@@ -2,25 +2,5 @@
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
   color: #fff;
-}
-
-.flip-unit {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  border-radius: 6px;
-  text-align: center;
-  min-width: 80px;
-  font-size: 2rem;
-  font-family: "Courier New", monospace;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-.flip-unit .label {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.75rem;
-  text-transform: uppercase;
 }
