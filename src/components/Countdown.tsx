@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/countdown.css';
 
-const targetDate = new Date('2025-08-05T00:00:00').getTime();
+const targetDate = new Date('2025-08-05T13:20:00Z').getTime();
 
 const getTimeLeft = () => {
   const diff = targetDate - Date.now();
