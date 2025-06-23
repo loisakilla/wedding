@@ -3,12 +3,10 @@ import { motion } from 'framer-motion';
 import '../styles/gallery.css';
 
 const images = [
-  'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80&1',
-  'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80&2',
-  'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80&3',
-  'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80&4',
-  'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80&5',
+  'https://sun9-66.userapi.com/s/v1/ig2/dwlRipL9eVZt1B28qnZO4luNuATg5EzzMRW0ZxDRDlJ7Zb1nFFBjp4gzm90XTR4SX5qATRA0YnnUMliiBHEtWNIo.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080&from=bu&cs=720x0',
+  'https://sun9-66.userapi.com/s/v1/ig2/dwlRipL9eVZt1B28qnZO4luNuATg5EzzMRW0ZxDRDlJ7Zb1nFFBjp4gzm90XTR4SX5qATRA0YnnUMliiBHEtWNIo.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080&from=bu&cs=720x0',
+  'https://sun9-66.userapi.com/s/v1/ig2/dwlRipL9eVZt1B28qnZO4luNuATg5EzzMRW0ZxDRDlJ7Zb1nFFBjp4gzm90XTR4SX5qATRA0YnnUMliiBHEtWNIo.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080&from=bu&cs=720x0',
+
 ];
 
 const Gallery: React.FC = () => (
