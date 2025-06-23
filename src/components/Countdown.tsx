@@ -13,9 +13,17 @@ const format = (num: number) => String(num).padStart(2, '0');
 
 const Countdown: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
+  const [finished, setFinished] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => setTimeLeft(getTimeLeft()), 1000);
+    const interval = setInterval(() => {
+      const remaining = getTimeLeft();
+      setTimeLeft(remaining);
+      if (remaining === 0) {
+        clearInterval(interval);
+        setFinished(true);
+      }
+    }, 1000);
     return () => clearInterval(interval);
   }, []);
 
@@ -32,7 +40,7 @@ const Countdown: React.FC = () => {
   ];
 
   return (
-      <section className="countdown">
+      <section className={`countdown${finished ? ' finished' : ''}`}>
         {units.map((unit) => (
                 <div key={unit.label} className="time-unit">
                   <span className="label">{unit.label}</span>
