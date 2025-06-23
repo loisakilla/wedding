@@ -4,13 +4,23 @@
 }
 
 .mf-cursor:before {
-  width: 100px;
-  height: 100px;
-  top: -50px;
-  left: -50px;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: -20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
 }
 
 .mf-cursor.-text {
   color: #fff;
   mix-blend-mode: difference;
+}
+
+.mf-cursor.-text:before {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: -50px;
 }
