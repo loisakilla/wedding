@@ -26,7 +26,8 @@ const CustomCursor = () => {
       mediaState: '-media',
       stateDetection: {
         '-pointer': 'a,button',
-        '-hidden': 'iframe'
+        '-hidden': 'iframe',
+        '-text': 'p,span,h1,h2,h3,h4,h5,h6,a,button,li,label,input,textarea'
       },
       visible: true,
       visibleOnState: false,
