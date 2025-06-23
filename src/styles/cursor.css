@@ -1,4 +1,16 @@
 .mf-cursor {
+  color: transparent;
+  mix-blend-mode: normal;
+}
+
+.mf-cursor:before {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: -50px;
+}
+
+.mf-cursor.-text {
   color: #fff;
   mix-blend-mode: difference;
 }

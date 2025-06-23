@@ -3,4 +3,6 @@
   display: flex;
   justify-content: center;
   color: #fff;
+  --fcc-digit-color: red;
+  --fcc-background: beige;
 }
