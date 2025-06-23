@@ -1,5 +1,5 @@
 .countdown {
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -14,14 +14,15 @@
 }
 
 .digit-wrapper {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
-  border: 2px solid beige;
   border-radius: 6px;
   margin: 0 0.1em;
   width: 1.6em;
   height: 2.5em;
-  color: red;
-  display: inline-block;
+  color: #ae4848;
+
 }
 
 .digit {

@@ -32,30 +32,34 @@ const Countdown: React.FC = () => {
   ];
 
   return (
-    <section className="countdown">
-      {units.map((unit) => (
-        <div key={unit.label} className="time-unit">
-          {format(unit.value).split('').map((digit, i) => (
-            <span className="digit-wrapper" key={i}>
-              <AnimatePresence mode="popLayout" initial={false}>
-                <motion.span
-                  key={`${unit.label}-${i}-${digit}`}
-                  className="digit"
-                  initial={{ y: '100%', opacity: 0 }}
-                  animate={{ y: '0%', opacity: 1 }}
-                  exit={{ y: '-100%', opacity: 0 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  {digit}
-                </motion.span>
-              </AnimatePresence>
-            </span>
-          ))}
-          <span className="label">{unit.label}</span>
-        </div>
-      ))}
-    </section>
-  );
+      <section className="countdown">
+        {units.map((unit) => (
+                <div key={unit.label} className="time-unit">
+                  <span className="label">{unit.label}</span>
+                  <div className="countdown">
+                    {format(unit.value).split('').map((digit, i) => (
+                        <span className="digit-wrapper" key={i}>
+                        <AnimatePresence mode="popLayout" initial={false}>
+                        <motion.span
+                            key={`${unit.label}-${i}-${digit}`}
+                            className="digit"
+                            initial={{y: '100%', opacity: 0}}
+                            animate={{y: '0%', opacity: 1}}
+                            exit={{y: '-100%', opacity: 0}}
+                            transition={{duration: 0.5}}
+                        >
+                          {digit}
+                        </motion.span>
+                      </AnimatePresence>
+                    </span>
+                    ))}
+                  </div>
+                </div>
+            )
+        )}
+      </section>
+  )
+      ;
 };
 
 export default Countdown;
