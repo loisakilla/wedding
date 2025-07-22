@@ -40,7 +40,7 @@ const ParticlesBackground: React.FC = () => {
             enable: true,
             speed: 0.3,
           },
-          number: { value: 60, density: { enable: true, area: 800 } },
+          number: { value: 30, density: { enable: true, area: 800 } },
           size: { value: { min: 3, max: 7 } },
         },
       }}

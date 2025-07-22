@@ -23,7 +23,7 @@ const App: React.FC = () => {
       <ParticlesBackground />
       <Hero />
       <Location />
-      <Details />
+{/*      <Details />*/}
       <DressCode />
       <ExtraDetails />
       <Countdown />

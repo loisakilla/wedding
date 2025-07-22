@@ -10,24 +10,27 @@ const Location: React.FC = () => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: false, amount: 0.2 }}
   >
-    <h2>Локация</h2>
-    <motion.img
-      className="location-image"
-      src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80"
-      alt="Шипиловский ЗАГС"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false }}
-    />
-    <motion.a
-      className="route-button"
-      href="https://yandex.ru/maps/?rtext=~Shipilovskiy%20proyezd%2C%2039%D0%BA1&rtt=auto"
-      target="_blank"
-      rel="noopener noreferrer"
-      whileHover={{ scale: 1.05 }}
-    >
-      Построить маршрут
-    </motion.a>
+    <h2>Локация - Шипиловский ЗАГС</h2>
+    <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+      <motion.img
+          className="location-image"
+          src="https://avatars.mds.yandex.net/get-altay/13951679/2a000001958ec8317fb87da75890227073c5/XXXL"
+          alt="Шипиловский ЗАГС"
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          viewport={{once: false}}
+      />
+      <motion.a
+          className="route-button"
+          href="https://yandex.ru/maps/213/moscow/?ll=37.696528%2C55.615224&mode=routes&rtext=~55.616954%2C37.695228&rtt=auto&ruri=~&z=14"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{scale: 1.05}}
+      >
+        Построить маршрут
+      </motion.a>
+    </div>
+
   </motion.section>
 );
 

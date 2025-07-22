@@ -11,29 +11,27 @@ const colors: ColorItem[] = [
   {
     hex: '#FEFFFE',
     images: [
-      'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80',
-      'https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=400&q=80'
+      'https://avatars.mds.yandex.net/i?id=53726183c8e688d713bc5c18c5026dc3_l-10299502-images-thumbs&n=13'
     ]
   },
   {
     hex: '#48372D',
     images: [
-      'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80',
-      'https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=400&q=80'
+      'https://optim.tildacdn.com/stor3133-3462-4064-b766-623165313965/-/cover/460x690/center/center/-/format/webp/44271739.jpg.webp',
+
     ]
   },
   {
     hex: '#E9EBF8',
     images: [
-      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80',
-      'https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=400&q=80'
+      'https://avatars.mds.yandex.net/i?id=53726183c8e688d713bc5c18c5026dc3_l-10299502-images-thumbs&n=13',
+
     ]
   },
   {
     hex: '#CE6C47',
     images: [
-      'https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=400&q=80',
-      'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=400&q=80'
+      'https://avatars.mds.yandex.net/i?id=53726183c8e688d713bc5c18c5026dc3_l-10299502-images-thumbs&n=13',
     ]
   }
 ];
@@ -59,7 +57,7 @@ const DressCode: React.FC = () => {
       viewport={{ once: false, amount: 0.2 }}
     >
       <h2>Дресс-код</h2>
-      <p>Просим поддержать нас в следующей палитре:</p>
+      <p>Мы будем невероятно рады, если Вы поддержите нас в данном дресс-коде и придете в таких цветах:</p>
       <div className="palette">
         {colors.map((color, idx) => (
           <div

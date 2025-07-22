@@ -15,16 +15,16 @@ const Schedule: React.FC = () => (
 
     <ul>
       <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }}>
-        Приезжаем к Шипловскому ЗАГСу к 16:20. Начинаем снимать рилсы
+        16:20 - Начало регистрации в Шипиловском Загсе
       </motion.li>
       <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }}>
-        Ждем некоторое время пока пройдут все проверки. Все еще снимаем рислы
+        17:20 - Конец регистрации, плавно переезжаем в ресторан
       </motion.li>
       <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }}>
-        После окончания проверок, начало церемонии. Продолжаем снимать рилсы
+        18:00 - Отмечаем праздник в ресторане Мясо&Рыба
       </motion.li>
       <motion.li initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }}>
-        В 17:20 пьем шампанское на пороге ЗАГСа. Непрекращаем снимаем рилсы до тех пор, пока не закончится место)))0))
+        22:00 - Завершение вечера
       </motion.li>
     </ul>
   </motion.section>

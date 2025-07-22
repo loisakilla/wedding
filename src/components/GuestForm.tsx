@@ -27,7 +27,7 @@ const GuestForm: React.FC = () => {
       `Аллергии: ${allergy}`;
 
     window.location.href =
-      `mailto:example@example.com?subject=Анкета%20гостя&body=${encodeURIComponent(body)}`;
+      `mailto:kataeffg@yandex.ru?subject=Анкета%20гостя&body=${encodeURIComponent(body)}`;
   };
 
   return (

@@ -2,18 +2,17 @@
   padding: 4rem 2rem;
   background-color: transparent;
   color: #fff;
+  text-align: center;
 }
 
-.schedule h2 {
-  max-width: 600px;
-  margin: 0 auto;
-}
 
 .schedule ul {
   list-style: none;
   padding: 0;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
+  line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 .schedule li {
