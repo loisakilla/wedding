@@ -4,6 +4,10 @@ import Details from './components/Details';
 import Schedule from './components/Schedule';
 import Gallery from './components/Gallery';
 import Countdown from './components/Countdown';
+import Location from './components/Location';
+import DressCode from './components/DressCode';
+import ExtraDetails from './components/ExtraDetails';
+import GuestForm from './components/GuestForm';
 
 import CustomCursor from './components/CustomCursor';
 
@@ -18,9 +22,13 @@ const App: React.FC = () => {
       <CustomCursor />
       <ParticlesBackground />
       <Hero />
+      <Location />
       <Details />
+      <DressCode />
+      <ExtraDetails />
       <Countdown />
       <Schedule />
+      <GuestForm />
       <Gallery />
     </>
   );
